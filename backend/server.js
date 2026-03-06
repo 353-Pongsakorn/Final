@@ -8,7 +8,11 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Middleware
-app.use(cors());  // อนุญาต cross-origin จาก frontend
+app.use(cors({
+    origin: '*', // อนุญาตทุก origin (หรือระบุเฉพาะ URL ของ Netlify ก็ได้)
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+})); // อนุญาต cross-origin จาก frontend
 app.use(express.json());
 
 // สร้างโฟลเดอร์ logs ถ้ายังไม่มี (สำหรับ volume task)
