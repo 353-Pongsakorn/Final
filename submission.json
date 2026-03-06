@@ -1,0 +1,21 @@
+{
+
+  "student_id": "6604101353",
+
+  "name": "พงศกร ทนานนท์",
+
+  "github_repo": "https://github.com/353-Pongsakorn/Final",
+
+  "backend_base_url": "https://final-1-12a5.onrender.com",
+
+  "frontend_url": "https://transcendent-boba-17c942.netlify.app",
+
+  "api": {
+
+    "health": "https://final-1-12a5.onrender.com/api/health",
+
+    "tasks": "https://final-1-12a5.onrender.com/api/tasks"
+
+  }
+
+}
