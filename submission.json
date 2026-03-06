@@ -6,9 +6,9 @@
 
   "github_repo": "https://github.com/353-Pongsakorn/Final",
 
-  "backend_base_url": "https://dashboard.render.com/web/srv-d6l6l6i4d50c73b3hod0",
+  "backend_base_url": "https://final-1-12a5.onrender.com",
 
-  "frontend_url": "https://app.netlify.com/projects/transcendent-boba-17c942/overview",
+  "frontend_url": "transcendent-boba-17c942.netlify.app",
 
   "api": {
 

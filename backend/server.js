@@ -11,18 +11,18 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());  // อนุญาต cross-origin จาก frontend
 app.use(express.json());
 
-// สร้างโฟลเดอร์ logs ถ้ายังไม่มี (สำหรับ volume demo)
+// สร้างโฟลเดอร์ logs ถ้ายังไม่มี (สำหรับ volume task)
 const logsDir = path.join(__dirname, 'logs');
 if (!fs.existsSync(logsDir)) {
     fs.mkdirSync(logsDir);
 }
 
-// Endpoint demo: Return Git + Docker info และ log request
+// Endpoint task: Return Git + Docker info และ log request
 app.get('/', (req, res) => {
-    res.send('Backend is running! Access /api/demo for data.');
+    res.send('Backend is running! Access /api/tasks for data.');
 });
 
-app.get('/api/demo', (req, res) => {
+app.get('/api/tasks', (req, res) => {
     const logMessage = `Request at ${new Date().toISOString()}: ${req.ip}\n`;
     fs.appendFileSync(path.join(logsDir, 'access.log'), logMessage);
 
