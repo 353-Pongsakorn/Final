@@ -15,7 +15,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(cors({
-  origin: 'https://transcedent-boba-17c942.netlify.app', // วางลิงก์ Netlify ของคุณตรงนี้
+  origin: 'transcendent-boba-17c942.netlify.app', // วางลิงก์ Netlify ของคุณตรงนี้
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
